@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=DM+Sans&display=swap');
+body{
+    margin: 0;
+    padding: 0; 
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    background: linear-gradient(90deg, #FFCAD4 50%,#FFFFFF 50%);
+    min-height: 100vh;
+}
+div{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #9D8189;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    border-radius: 15%;
+    box-shadow: 1px 1px 20px black;
+}
+h1{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Architects Daughter', cursive;
+}
+.one{
+    text-align: left;
+    margin-left: 150px;
+}
+input[type='text']{
+     border: 25px solid  #F28482;
+     border-radius: 4px;
+     background-color:#9D8189 ;
+     }
+#weight,#height{
+    color: rgb(236, 83, 103);
+    text-align: left;
+    font-size: 20px;
+    font-weight: 200;
+    outline: none;
+    border: none;
+    /*background: none;*/
+    border-bottom: 1px solid pink;
+    width: 200px;
+}
+#weight:focus,#height:focus{
+    border-bottom: 2px solid pink;
+    width: 300px;
+    transition: 0.5s;
+    
+}
+#bmi{
+    color: #D8E2DC;
+}
+#btn{
+    font-family:'DM Sans', sans-serif;
+    margin-top: 10px;
+    border: none;
+    color: black;
+    background: linear-gradient(120deg,#D8E2DC, #f6f4e6);
+    width: 150px;
+    padding: 10px;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+#btn:hover{
+    box-shadow: 1px 1px 10px grey;
+    transition: 0.25s;
+}
+#info{
+    font-family: inherit;
+    font-size: 12px;
+    opacity: 0.75;
+}
+@media screen and (max-width: 600px){
+    div{
+        width: 250px;
+    }
+    #weight,#height{
+        width: 100px;
+        
+    }
+    #weight:focus,#height:focus{
+        width: 150px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .one{
+        margin-left: 75px;
+    }
+
+
+}
